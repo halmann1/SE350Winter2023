@@ -17,15 +17,17 @@ public class InitializationBlocksExample {
         System.out.println("Initialization block-1 is executed. Setting a=1.");
         a = 1;
     }
-    // Initialization block-2
-    {
-        System.out.println("Initialization block-2 is executed. Setting b=2;");
-        b = 2;
-    }
+
     // Constructor
     InitializationBlocksExample() {
         System.out.println("User-defined parameterless constructor is executed.Setting c=3.");
         c = 3;
+    }
+
+    // Initialization block-2
+    {
+        System.out.println("Initialization block-2 is executed. Setting b=2;");
+        b = 2;
     }
 }
 

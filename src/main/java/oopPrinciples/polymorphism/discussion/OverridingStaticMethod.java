@@ -21,7 +21,6 @@ class ParentClass {
         System.out.println("dynamic from ParentClass");
     }
 }
-
 class ChildClass extends ParentClass {
     public static void printStatic(){
         System.out.println("static from ChildClass");
@@ -30,7 +29,6 @@ class ChildClass extends ParentClass {
         System.out.println("dynamic from ChildClass");
     }
 }
-
 class DemoOverridingStaticMethod{
     public static void main (String args[]) {
         ParentClass parentClass = new ChildClass();

@@ -16,6 +16,7 @@ interface MyInterface {
     void implementMe();
 }
 class MyClass implements MyInterface {
+    @Override
     public void implementMe() {
         System.out.println("MyClass is implementing the interface method implementMe().");
     }

@@ -30,7 +30,7 @@ class MyClassWithDefault implements InterfaceWithDefault {
         System.out.println("test");
     }
 
-//    Overriding the default method in an interface
+////    Overriding the default method in an interface
     @Override
     public void defaultMethod() {
     System.out.println("MyClassWithDefault is overriding the default interface method.");

@@ -20,6 +20,7 @@ interface InterfaceBB {
 }
 //Interface extending another interface
 interface InterfaceCC extends InterfaceAA, InterfaceBB {
+
     void showInterfaceCCMethod();
 }
 class MySampleClass implements InterfaceCC {
@@ -53,7 +54,7 @@ class DemoInterfaceInheritance {
         interBB.showInterfaceBBMethod();
 
         InterfaceCC interCC = mySampleClassOb;
-        interCC.showInterfaceCCMethod();
+        interCC.showInterfaceBBMethod();
 
         //Calling directly through mySampleClassOb.
         System.out.println("\n**Now invoking the methods directly through a MyClass object.**\n");
