@@ -79,16 +79,36 @@ public class ConverterGUI {
 			@Override
 			public void actionPerformed(ActionEvent event) {
 
-				System.out.println("Convert button clicked");
 				//TODO SUMMARY: You get the input from UI, you call the Convert method in the Client class, and you set the output in the UI
 
 				//    getText() on inputField
+				String distance = inputField.getText();
 				//    parse the input to double
+				
 				//    try/catch block to catch any possible error
+				try {
+
+					Double distanceDouble = Double.valueOf(distance);
+					if (distanceDouble < 0){
+						throw new IllegalArgumentException();
+					}
+
+					String unit = outputUnit.getSelectedItem().toString();
+					
+					String answer = Client.convert(distanceDouble,unit);
+					
+					outputField.setText(answer);
+				} catch (IllegalArgumentException e) {
+					outputField.setText("Illegal arg, inpt must be 0 < double");
+				}
 				//    Test the input for invalid value (negative, string, null, ...)
 				//    getSelectedItem() on outputUnit to retrieve the unit selected by user
+				
+
 				//    Use your convert() logic on the input and unit values to apply the patterns
+				
 				//    setText() on outputField to show the result or error message to the user.
+				
 			}
 		};
 		// add ActionListener() to the button
