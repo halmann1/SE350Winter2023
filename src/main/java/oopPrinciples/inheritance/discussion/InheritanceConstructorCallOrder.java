@@ -19,11 +19,13 @@ class ParentClass {
 }
 class ChildClass extends ParentClass {
     ChildClass() {
+
         System.out.println("Inside Child Constructor.");
     }
 }
 class GrandchildClass extends ChildClass {
     GrandchildClass() {
+//        call super class constructor first then continue
         System.out.println("Inside GrandChild Constructor.");
     }
 }

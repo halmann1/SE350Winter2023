@@ -12,7 +12,7 @@ package oopPrinciples.abstraction;
 //A simple abstraction example
 public class AbstractionExample {
 }
-abstract class AbstractClass {
+ abstract class AbstractClass {
     protected int myInt = 450;
     public abstract void showMe();
     public void completeMethod1() {
