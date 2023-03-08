@@ -1,0 +1,26 @@
+1 : False, abstract classes can have mixture of normal and abstract methods, while the normal ones are inherited, the abstract ones needs
+to be overriden
+
+2 : False, because if the class is not extended then how will the subclass we are trying to implement be able to see its methods
+
+3 : False, while 'this' does refer to the current instantiation of the class, the 'super' keyword can be used outside the construction context
+as it refers to the overriden methods of the super class if we wish to call them.
+
+4 : False, interfaces are like classes in that they have a set of methods and variables, but unlike classes we cannot initialize objects
+out of them, they are more of a protocol to be followed rather than an object to be
+
+5 : False, While polymorphism instructs a subclass to override some or add to the methods its superclass, it does not specifically 
+instruct to override everything, just so the subclass can have some resemblance to its superclass
+
+6 : True, In most cases inheritance is transitive as it needs to be according to its name, and in that sense we can see that it transmitts 
+some of the attributes from a superclass to its subclasses
+
+7 : False, a static variable or a method is one that is used for all instances of single class, and are not specific to a single object of that
+class.
+
+8 : True, an abstract class is a class that is not complete and must have atleast one uncompleted "abstract" method
+
+9 : False, A final class cannot be extended and thus cannot be abstract or incomplete, as that will imply that it needs to be extended
+
+10: True, Interfaces can extend other interfaces, but it cannot extend classes as they are not classes themselves but more of protocols for 
+classes to follow.
